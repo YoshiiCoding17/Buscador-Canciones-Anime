@@ -5,7 +5,7 @@ UI.formularioBuscar.addEventListener("submit",buscarCancion); //Llamamos a la va
 
 
 function buscarCancion(e){
-    e.preventDefault(); // <-- Quitamos el evento por defecto que se genera al enviar un formulario (el evento por defecto de un formulario es que se recarga la pagina al enviarlo)
+    e.preventDefault(); //<-- Quitamos el evento por defecto que se genera al enviar un formulario (el evento por defecto de un formulario es que se recarga la pagina al enviarlo)
 
     //Obtener datos del formulario
     const artista = document.querySelector("#artista").value;
