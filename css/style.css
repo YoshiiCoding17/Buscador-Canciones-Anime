@@ -92,11 +92,13 @@ label{
     height: 2.5rem;
     padding: 1rem;
     width: 100%;
-    background-color:white;
     transition: outline .1s ease-in-out;
+    background-color: white;
+    border: none;
 }
 .input input[type="text"]:focus{
-    outline: 2px solid whitesmoke;
+    outline: 2px solid #979494;
+    background-color: white;
 }
 .enviar {
     text-align: right;
