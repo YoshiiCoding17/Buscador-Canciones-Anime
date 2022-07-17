@@ -1,0 +1,175 @@
+html{
+    min-height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* background-image: linear-gradient(to right, #1e3c72 0%, #00000057 1%, #2a5298 100%); */
+    background-image: url(../img/perspective-japanese-street-neon-lights_52683-44988.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+body::before{
+    content:"";
+    position: absolute;
+    opacity: .3;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(15px);
+    min-height: 100vh;
+}
+h1 {
+    font-weight: 400;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+label{
+    color: white;
+}
+.contenido {
+    width: 100%;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    min-height: 100vh;
+    max-height: 100%;
+}
+.contenido h1{
+    color: #e1e1e1;
+}
+#buscar h2,p{
+    color:#e1e1e1;
+}
+.contenedor{
+    border: 2px solid white;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.formulario-busqueda p {
+    text-align: center;
+}
+.formulario-busqueda span {
+    color: red;
+}
+.input {
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    .input{
+        display: flex;
+        align-items: center;
+    }
+}
+.input label {
+    flex: 0 0 120px;
+    text-align: right;
+    margin-right: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.input span {
+    color: red;
+}
+.input input[type="text"] {
+    height: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    outline: none;
+    transition: outline .1s ease-in-out;
+}
+.input input[type="text"]:focus{
+    outline: 2px solid whitesmoke;
+}
+.enviar {
+    text-align: right;
+    justify-content: flex-end!important;
+}
+.input input[type="submit"]{
+    width: 100%;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    height: 38px;
+    min-width: 120px;
+    min-height: 38px;
+    border: none;
+    color: #fff;
+    background-color: rgb(88, 101, 242);
+    transition: background-color .17s ease,color .17s ease;
+
+} 
+.input input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #384e9d;
+    background-color: rgb(71, 82, 196);
+}
+@media (min-width: 768px) {
+    .input input[type="submit"]{
+        display: inline;
+        width: unset;
+    }
+}
+
+.error {
+    padding: 1rem;
+    border: 1px solid red;
+    background-color: rgb(249, 121, 121);
+    color: white;
+    text-align: center;
+}
+
+.letra-resultado h2{
+    color: white;
+    margin-bottom: 3rem;
+}
+#resultado {
+    white-space: pre-wrap;
+}
+@media (min-width: 768px) {
+    #resultado{
+        display: flex;
+    }
+}
+.margin-arriba-0{
+    margin:1rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+@media (min-width: 768px) {
+    .margin-arriba-0{
+        text-align: left;
+    }
+}
+
+
+iframe{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    iframe{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
